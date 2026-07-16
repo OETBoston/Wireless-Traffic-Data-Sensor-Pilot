@@ -318,7 +318,7 @@
       </div>
     </div>
 
-    <p>The City of Boston's Office of Emerging Technology (OET), working with Boston's Streets Cabinet, is testing a new generation of sensors to understand how curb space is used and how vehicles move through neighborhoods. OET's sensors detect wireless signals that vehicles and phones broadcast, allowing the City to measure how people use the street while preserving personal privacy (no cameras and no GPS location tracking). The one-week pilot covers two areas of the city: a three-block stretch of Boylston Street in Back Bay, and a six-block area along Washington Street and Milk Street downtown.</p>
+    <p>The City of Boston's Office of Emerging Technology (OET), working with Boston's Streets Cabinet, is testing a new generation of sensors to understand how curb space is used and how vehicles move through neighborhoods. OET's sensors detect wireless signals that vehicles and phones broadcast, allowing the City to measure how people use the street while preserving personal privacy (<a href="#privacy-protected">learn more</a>). The one-week pilot covers two areas of the city: a three-block stretch of Boylston Street in Back Bay, and a six-block area along Washington Street and Milk Street downtown.</p>
   </div>
 
   <section class="dash-section">
@@ -357,11 +357,11 @@
     </div>
   </section>
 
-  <section class="shaded">
+  <section class="shaded" id="privacy-protected">
     <div class="inner">
       <span class="badge">🔒 Privacy-First Technology</span>
       <h2>Your Privacy Is Protected</h2>
-      <p>Sensors detect wireless signals that phones and vehicles broadcast publicly. Observed device IDs are not personally identifiable, and every ID is irreversibly hashed before it is logged by our sensors. The City will not store, or have access to, raw IDs that trace back to a specific device.</p>
+      <p>OET's  sensors detect wireless Bluetooth, WiFi, and Tire Pressure Monitoring System (TPMS) signals that devices, like phones and vehicles, broadcast publicly. These device IDs are randomized by default, and are not personally identifiable in any way.  Wireless data itself, such as the information devices send over Bluetooth or WiFi, are <em>never</em> collected by OET's sensors.</p>
 
       <div class="two-col">
         <div class="card no">
@@ -371,13 +371,15 @@
             <li>Names, addresses, or vehicle license plates</li>
             <li>GPS coordinates or precise location tracking</li>
             <li>Any link between this data and a specific person or device owner</li>
+            <li>Information sent over WiFi or Bluetooth networks</li>
           </ul>
         </div>
         <div class="card yes">
           <h3>This Technology DOES Collect</h3>
           <ul>
-            <li>Hashed Bluetooth, WiFi, and TPMS device IDs (one-way, irreversible)</li>
-            <li>Timestamps and signal strength</li>
+            <li>Randomized Bluetooth, WiFi, and TPMS device IDs</li>
+            <li>Timestamps</li>
+            <li>Signal strength</li>
           </ul>
         </div>
       </div>
@@ -389,12 +391,12 @@
 
     <div class="faq-item">
       <p class="q">Does this track my phone?</p>
-      <p>Sensors briefly detect the Bluetooth or WiFi signal your phone already broadcasts, the same signal it sends when deciding whether to connect to a speaker or car stereo, and convert it into an anonymous, one-way hash the instant it's detected. That anonymous hash is the only thing that ever reaches the City. Your phone's identity never does, and it isn't followed once you leave the test area.</p>
+      <p>OET's pilot is built on a privacy-first foundation that ensures your phone - and any other device - remains anonymous. Our sensors function by briefly observing the Bluetooth or WiFi signal your phone already broadcasts - the same signal it shares when connecting to a new speaker or car stereo. These signals are randomized, rotate over time, and are not associated with your personal identity in any way.</p>
     </div>
 
     <div class="faq-item">
       <p class="q">What's new compared to last year's test?</p>
-      <p><a href="https://oetboston.github.io/tire-pressure-sensor/">Last year's pilot</a> measured traffic using tire-pressure (TPMS) signals alone. This pilot builds on that same privacy-first foundation and goes further, adding Bluetooth and WiFi detection into the same sensor unit to give the City a fuller picture of both vehicle and pedestrian activity.</p>
+      <p><a href="https://oetboston.github.io/tire-pressure-sensor/">Last year's pilot</a> measured traffic using tire-pressure (TPMS) signals alone. This pilot builds on that same privacy-first foundation by adding Bluetooth and WiFi detection into the  sensor units to give the City a fuller picture of street activity.</p>
     </div>
 
     <div class="faq-item">
@@ -404,7 +406,7 @@
 
     <div class="faq-item">
       <p class="q">Can this data be linked back to me?</p>
-      <p>Every device ID is hashed the instant it's detected. This one-way hash ensures all data is anonymous. We never connect IDs to a name, account, or registration database, and the City has built this pilot specifically so such tracking is not possible.</p>
+      <p>The device IDs our sensors observe are randomized and rotate over time, ensuring the data we collect is anonymous. OET will never - nor do we have the ability to - connect device IDs to a name, account, or registration database.</p>
     </div>
 
   </section>
@@ -413,8 +415,8 @@
     <div class="inner">
       <h2>Data Retention &amp; Security</h2>
       <ul>
-        <li>Every device ID is irreversibly hashed before storage</li>
-        <li>Data is analyzed and shared only in aggregate form, never at the level of an individual device</li>
+        <li>All device IDs detected by the sensors are randomized</li>
+        <li>Data will only be shared in aggregate form, never at the level of an individual device</li>
         <li>Raw sensor data is deleted 60 days after the test ends</li>
         <li>Access is restricted to authorized vendors and City of Boston personnel</li>
       </ul>
